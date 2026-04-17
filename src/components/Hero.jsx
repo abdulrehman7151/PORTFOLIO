@@ -39,7 +39,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className={`relative w-full h-[120vh] md:h-screen mx-auto overflow-hidden`}>
+    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
       <div
         className={`absolute inset-0 top-[8rem] short:top-[100px] xs:top-[60px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
