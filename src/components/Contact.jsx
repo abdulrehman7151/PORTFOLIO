@@ -79,11 +79,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const isEmailJsConfigured = Boolean(
-    import.meta.env.VITE_APP_EMAILJS_SERVICE_ID &&
-    import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID &&
-    import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  );
+  const EMAILJS_SERVICE_ID = "service_ylotu6w";
+  const EMAILJS_TEMPLATE_ID = "template_bbl93g8";
+  const EMAILJS_PUBLIC_KEY = "2wmqynpthw5obFFfp";
 
   const handleChange = (e) => {
     const { target } = e;
@@ -105,23 +103,17 @@ const Contact = () => {
       return;
     }
 
-    if (!isEmailJsConfigured) {
-      alert("Email service is not configured. Please set up EmailJS environment variables. Check .env.example for instructions.");
-      setLoading(false);
-      return;
-    }
-
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           name: form.name,
           email: form.email,
           title: "Contact Us",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
