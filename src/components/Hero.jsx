@@ -39,7 +39,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
+    <section className={`relative w-full h-[120vh] md:h-screen mx-auto overflow-hidden`}>
       <div
         className={`absolute inset-0 top-[8rem] short:top-[100px] xs:top-[60px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 pink-gradient" />
         </div>
 
-        <div style={{ zIndex: 1, width: isMobile ? "90%" : "65%" }}>
+        <div style={{ zIndex: 1, width: isMobile ? "90%" : "65%" }} className="pb-24 md:pb-0">
           <h1 className={`${styles.heroHeadText} text-white`}>
             <span className="text-[#f72585]">Hello,</span> and welcome to my
             corner of the web!
@@ -85,7 +85,7 @@ const Hero = () => {
       {!isMobile && <ComputersCanvas />}
 
       <div
-        className={`absolute xs:bottom-10 md:bottom-5 bottom-5 w-full flex justify-center items-center`}
+        className={`absolute xs:bottom-10 md:bottom-5 bottom-5 w-full hidden sm:flex justify-center items-center`}
       >
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
