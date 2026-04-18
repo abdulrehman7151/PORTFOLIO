@@ -236,7 +236,7 @@ const projects = [
       },
     ],
     image: apple,
-    url: "https://compassionate-dubinsky-8eb37e.netlify.app/",
+    url: "apple-ecom-webiste.vercel.app",
   },
  
   {
@@ -258,29 +258,9 @@ const projects = [
       },
     ],
     image: architect,
-    url: "https://naughty-feynman-e90337.netlify.app/",
+    url: "architecture-project-eight.vercel.app",
   },
-  {
-    name: "Variety of Foods",
-    description:
-      "This example project has complex css animations and a responsive design to work with every screen size.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: foods,
-    url: "https://determined-leakey-dbbfff.netlify.app/",
-  },
+
   {
     name: "Ecom store ",
     description:
