@@ -236,7 +236,7 @@ const projects = [
       },
     ],
     image: apple,
-    url: "apple-ecom-webiste.vercel.app",
+    url: "https://apple-ecom-webiste.vercel.app",
   },
  
   {
@@ -258,7 +258,7 @@ const projects = [
       },
     ],
     image: architect,
-    url: "architecture-project-eight.vercel.app",
+    url: "https://architecture-project-eight.vercel.app",
   },
 
   {
