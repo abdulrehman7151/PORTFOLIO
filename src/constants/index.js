@@ -275,6 +275,20 @@ const projects = [
     url: "https://ecom-webiste-kappa.vercel.app",
     image: ecom,
   },
+    {
+    name: "DrinkLy",
+    description:
+      "This example project has complex css animations and a responsive design to work with every screen size.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    url: "https://drink-frontend-eta.vercel.app/",
+    image: ecom,
+  },
   // {
   //   name: "Ecom store ",
   //   description:
