@@ -31,7 +31,8 @@ import {
   tours,
   airbnb,
   airflip,
-  ecom
+  ecom,
+  DrinkLy
 } from "../assets";
 
 export const navLinks = [
@@ -280,14 +281,22 @@ const projects = [
     description:
       "This example project has complex css animations and a responsive design to work with every screen size.",
     tags: [
-      {
-        name: "React",
+    {
+        name: "html",
         color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
       },
       
     ],
     url: "https://drink-frontend-eta.vercel.app/",
-    image: ecom,
+    image: DrinkLy,
   },
   // {
   //   name: "Ecom store ",
