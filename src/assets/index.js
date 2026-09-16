@@ -37,7 +37,7 @@ import foods from "./foods.png";
 import tours from "./tours.png";
 import airbnb from "./airbnb.png";
 import ecom from "./ecom.png";
-import DrinkLy from ".DrinkLy.png"
+import DrinkLy from "./DrinkLy.png"
 
 export {
   logo,
